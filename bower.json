@@ -1,6 +1,6 @@
 {
   "name": "dt-phantomjs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "phantomjs.d.ts",
   "dependencies": {
   }
