@@ -1,11 +1,13 @@
-// Type definitions for PlantomJS v1.8.0 API
+// Type definitions for PhantomJS v1.9.0 API
 // Project: https://github.com/ariya/phantomjs/wiki/API-Reference
 // Definitions by: Jed Hunsaker <https://github.com/jedhunsaker> and Mike Keesey <https://github.com/keesey>
 // Definitions: https://github.com/borisyankov/DefinitelyTyped
 
 declare function require(module: string): any;
 
-declare var phantom: {
+declare var phantom: Phantom;
+
+interface Phantom {
 
 	// Properties
 	args: string[];  // DEPRECATED
@@ -28,7 +30,7 @@ declare var phantom: {
 
 	// Callbacks
 	onError: (msg: string, trace: string[]) => any;
-};
+}
 
 interface System {
 	pid: number;
